@@ -32,12 +32,17 @@ As árvores-tochas em fachos de luz."
 # Capítulo IV
 ## Adivinhas no escuro
 
-[Riddles in the dark 1](https://www.youtube.com/watch?v=MoWSBYVOp2M "Veja a charada!")
+
 ##### Montanha
 "Tem raízes misteriosas,  
 É mais alta que as frondosas  
 Sobe, sobe e também desce,  
 Mas não cresce nem decresce."
+
+
+[Riddles in the dark 1](https://www.youtube.com/watch?v=MoWSBYVOp2M "Veja a charada!")
+
+
 >O Hobbit - J.R.R.Tolkien
 >
 >Página 74
@@ -45,12 +50,16 @@ Mas não cresce nem decresce."
 
 
 
-[Riddles in the dark 2](https://www.youtube.com/watch?v=MoWSBYVOp2M&t=137s "Veja a charada!")
 ##### Vento
 "Sem asas volita,  
 Sem voz ele ulula,  
 Sem dentes mordica,  
 Sem boca murmura."
+
+
+[Riddles in the dark 2](https://www.youtube.com/watch?v=MoWSBYVOp2M&t=137s "Veja a charada!")
+
+
 >O Hobbit - J.R.R.Tolkien
 >
 >Página 75
