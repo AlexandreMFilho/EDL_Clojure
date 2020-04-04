@@ -2,10 +2,10 @@
 
 TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)
 
-*Aqui irei documentar meus testes e descobertas usados no Leinigein repl
+#Aqui irei documentar meus testes e descobertas usados no Leinigein repl
 
 
-**Definindo funções
+##Definindo funções
 
 
 >(defn hello-clj[]
