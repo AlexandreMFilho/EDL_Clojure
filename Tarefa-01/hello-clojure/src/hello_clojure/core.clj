@@ -1,7 +1,7 @@
 (ns hello-clojure.core)
 
-(defn foo[x]
-  (println x "Hello,Clojure!!!"))
+(defn main[& args]
+  (println args "Hello,Clojure!!!"))
 
   (defn hello-clj[]
     (println "Hello""Clojure""!!!"))
