@@ -2,10 +2,10 @@
 
 TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)
 
-#Aqui irei documentar meus testes e descobertas usados no Leinigein repl
+##Aqui irei documentar meus testes e descobertas usados no Leinigein repl
 
 
-##Definindo funções
+###Definindo funções
 
 
 >(defn hello-clj[]
@@ -37,3 +37,61 @@ TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)
 (defn pares[& args]
   (filter even? args))
 (pares 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20)
+
+(if true
+  (println "verdade")
+  (printl "falso"))
+verdade
+
+(if false
+  (println "verdade")
+  (println "falso"))
+falso
+
+(if false
+  (println "verdade"))
+nil
+
+(if true
+  (do(println "verdade ")
+  (println "verdadeira."))
+  (do(println "falso")
+  (println  "inverdade.")))
+verdade
+verdadeira.
+
+(if false
+  (do(println "verdade ")
+  (printl "verdadeira."))
+  (do(printl "falso ")
+  (println  "inverdade.")))
+falso
+inverdade.
+
+(when true
+  (println "v"
+  "v"
+  "v"))
+v v v
+nil
+
+(nil? 1)
+false
+
+(true? 1)
+false
+
+(false? 1)
+false
+
+(= 1 1)
+true
+
+(= "string" "string")
+true
+
+(= "string" "STRING")
+false
+
+(= "A" 2)
+false
