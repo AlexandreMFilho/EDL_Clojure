@@ -95,3 +95,13 @@ false
 
 (= "A" 2)
 false
+
+clojure-noob.core=> (def v1 5)
+#'clojure-noob.core/v1
+clojure-noob.core=> (println v1)
+5
+nil
+clojure-noob.core=> (+ 2 v1)
+7
+clojure-noob.core=> (= 5 v1)
+true
