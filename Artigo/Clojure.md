@@ -23,6 +23,8 @@ Hickey trabalhou na dotLisp, um projeto com base na plataforma .NET e também de
 Ele a desenvolveu pelo desejo de modernizar a linguagem LISP mesclando-a com a plataforma Java para Programação Funcional e desenhada para computação concorrente.
 Atualmente no Brasil Clojure é utilizado por empresas como Walmart, Puppet Labs, B2W, americanas, submarino, Nubank, dentre outras, demonstrando sua força, poder e adaptabilidade.  
 
+O nome Clojure, de acordo com o próprio criador da linguagem, é um trocadilho com o conceito em programação “closure”, incorporando as letras C, L e J que se referem a C#, Lisp e Java respectivamente que foram as três linguagens que mais influenciaram no design de Clojure. 
+
 ## Características
 
 ### Programação Funcional
@@ -34,10 +36,9 @@ Essa pensamento é tão forte que um clojurista adotou a a seguinte filosofia:
 >Alan Perlis
 
 ### Estática ou Dinâmica?
+Clojure é uma linguagem com tipagem dinâmica e compilada que mantém sua dinamicidade através de um ambiente que permite com que cada um de seus recursos da linguagem sejam suportados em tempo de execução. 
 
-Clojure é uma linguagem Estática poŕem dependendo do seu ambiente de desenvolvimento pode ser Dinâmica.
-Um código Clojure é compilado em um bytecode Java, através disso podemos rodar um Projeto Clojure em qualquer Ambiente que possua o Java instalado.
-Existem ferramentas como o Leiningen que é um interpretador Clojure ao qual permite a sua execução em tempo real. Além disso o Leiningen permite acessar um programa clj em execução e permite a alteração do mesmo em tempo de execução.
+O ambiente repl é utilizado para fazer a execução de seus programas e leiningen é uma ferramenta popular escrita usando própria linguagem Clojure que faz o gerênciamento de dependencias e a automação da compilação, simplificando os processos necessários para a criação de um projeto.
 
 ### Onde e como é usado ?
 
