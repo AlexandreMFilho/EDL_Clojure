@@ -25,7 +25,7 @@ Atualmente no Brasil Clojure é utilizado por empresas como Walmart, Puppet Labs
 
 ## Características
 
-#### Programação Funcional
+### Programação Funcional
 Como ja apresentado, Clojure é uma linguagem Funcional,cujo objetivo é trabalhar principalmente com funções. Tudo se resume a funções que podem ser agrupadas ou combinadas para produzir um resultado.
 Essa pensamento é tão forte que um clojurista adotou a a seguinte filosofia:
 
@@ -33,22 +33,22 @@ Essa pensamento é tão forte que um clojurista adotou a a seguinte filosofia:
 "It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures."  
 >Alan Perlis
 
-#### Estática ou Dinâmica?
+### Estática ou Dinâmica?
 
 Clojure é uma linguagem Estática poŕem dependendo do seu ambiente de desenvolvimento pode ser Dinâmica.
 Um código Clojure é compilado em um bytecode Java, através disso podemos rodar um Projeto Clojure em qualquer Ambiente que possua o Java instalado.
 Existem ferramentas como o Leiningen que é um interpretador Clojure ao qual permite a sua execução em tempo real. Além disso o Leiningen permite acessar um programa clj em execução e permite a alteração do mesmo em tempo de execução.
 
-#### Onde e como é usado ?
+### Onde e como é usado ?
 
-###### Nubank
+#### Nubank
 O CLOJURE é utilizado por empresas como a Nubank, para eles CLOJURE é uma ferramenta que permitiu remover a burocracia do sistema financeiro e devolver às pessoas o controle sobre o próprio dinheiro. Quando a empresa foi fundada CLOJURE pareceu a melhor opção afirmam seus funcionários, por ser Funcional:  
 >“Uma linguagem funcional, quando utilizada de forma correta, possui comportamento equivalente a uma função matemática, por isso não retorna um resultado inesperado”.  
 >diz Bruno.
 
 Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços são escritos em CLOJURE. Ainda posssuem códigos escritos em outras linguagens como python e Scala, mas a infraestrutura de microsserviços estão todos em CLOJURE.
 
-###### B2W
+#### B2W
 
 ## Exemplos
 
