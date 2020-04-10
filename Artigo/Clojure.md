@@ -3,8 +3,8 @@
 ![](https://miro.medium.com/max/1200/1*eLqeIits5crU3G5b9LMEyg.png)
 
 
-Alunos: Alexandre Maia e Luciano  
-Professor: Francisco Sant’Anna  
+Alunos: Alexandre Maia e Luciano Januário.  
+Professor: Francisco Sant’Anna.  
 Disciplina: Estrutura de Linguaguens – 2020.1  
 
 
