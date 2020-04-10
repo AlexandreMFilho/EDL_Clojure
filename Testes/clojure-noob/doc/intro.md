@@ -68,6 +68,7 @@ verdadeira.
 falso
 inverdade.
 
+"Mistura de if e do, é como um if porém apenas com o then e sem a parte do else"
 (when true
   (println "v"
   "v"
