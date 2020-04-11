@@ -23,7 +23,7 @@ Hickey trabalhou na dotLisp, um projeto com base na plataforma .NET e também de
 Ele a desenvolveu pelo desejo de modernizar a linguagem LISP mesclando-a com a plataforma Java para Programação Funcional e desenhada para computação concorrente.
 Atualmente no Brasil Clojure é utilizado por empresas como Walmart, Puppet Labs, B2W, americanas, submarino, Nubank, dentre outras, demonstrando sua força, poder e adaptabilidade.  
 
-O nome Clojure, de acordo com o próprio criador da linguagem, é um trocadilho com o conceito em programação “closure”, incorporando as letras C, L e J que se referem a C#, Lisp e Java respectivamente que foram as três linguagens que mais influenciaram no design de Clojure. 
+O nome Clojure, de acordo com o próprio criador da linguagem, é um trocadilho com o conceito em programação “closure”, incorporando as letras C, L e J que se referem a C#, Lisp e Java respectivamente que foram as três linguagens que mais influenciaram no design de Clojure.
 
 ## Características
 
@@ -36,14 +36,14 @@ Essa pensamento é tão forte que um clojurista adotou a a seguinte filosofia:
 >Alan Perlis
 
 ### Estática ou Dinâmica?
-Clojure é uma linguagem com tipagem dinâmica e compilada que mantém sua dinamicidade através de um ambiente que permite com que cada um de seus recursos da linguagem sejam suportados em tempo de execução. 
+Clojure é uma linguagem com tipagem dinâmica e compilada que mantém sua dinamicidade através de um ambiente que permite com que cada um de seus recursos da linguagem sejam suportados em tempo de execução.
 
 O ambiente repl é utilizado para fazer a execução de seus programas e leiningen é uma ferramenta popular escrita usando própria linguagem Clojure que faz o gerênciamento de dependencias e a automação da compilação, simplificando os processos necessários para a criação de um projeto.
 
 ### Onde e como é usado ?
 
 #### Nubank
-O CLOJURE é utilizado por empresas como a Nubank, para eles CLOJURE é uma ferramenta que permitiu remover a burocracia do sistema financeiro e devolver às pessoas o controle sobre o próprio dinheiro. Quando a empresa foi fundada CLOJURE pareceu a melhor opção afirmam seus funcionários, por ser Funcional:  
+O CLOJURE é utilizado por empresas como a Nubank, para eles "CLOJURE é uma ferramenta que permitiu remover a burocracia do sistema financeiro e devolver às pessoas o controle sobre o próprio dinheiro". Quando a empresa foi fundada CLOJURE pareceu a melhor opção afirmam seus funcionários, por ser Funcional:  
 >“Uma linguagem funcional, quando utilizada de forma correta, possui comportamento equivalente a uma função matemática, por isso não retorna um resultado inesperado”.  
 >diz Bruno.
 
