@@ -1,0 +1,2 @@
+May the gods of Clojure be with you.
+(blessing you Clojure_god)
