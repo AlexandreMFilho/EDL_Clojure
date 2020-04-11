@@ -1,6 +1,8 @@
 (ns clojure-noob.core
   (:gen-class))
 
+(use 'clojure.java.io)
+
 (defn quad[x]
     (println (* x x)))
 
@@ -32,6 +34,10 @@
   [infixed]
   (list (second infixed) (first infixed) (last infixed)))
 
+(defn ler []
+  (read-line))
+"(defn ler_num[]
+  (format (read-line) Integer))"
 
 (defn -main[& args]
   (println "Eu sou um pequeno pote de chá!")
@@ -73,4 +79,5 @@
   (println (infix (1 + 1))
   (macroexpand ' (infix (1 + 1)))
   )
+(println (+ 10 (ler_num)))
 )
