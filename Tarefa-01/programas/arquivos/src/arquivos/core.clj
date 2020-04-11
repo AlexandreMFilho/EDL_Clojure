@@ -36,4 +36,19 @@
   (ler_arquivo "Clojure.txt")
 
   "Lendo linha de um arquivo"
-  (ler_linha_arquivo "Clojure.txt"))
+  (ler_linha_arquivo "Clojure.txt")
+
+  (println "\nAgora você irá fornecer os dados, tanto o nome do arquivo, quanto o texto dentro dele.")
+
+
+  (println "Digite o nome do arquivo:")
+  (def filename (str (read-line) ".txt"))
+  (escreve_arquivo filename (read-line))
+
+  (println "Agora adicione mais algum texto ao arquivo.")
+  (adiciona_arquivo filename (read-line))
+
+  (println "Aqui o que está dentro do arquivo " filename ":")
+  (ler_arquivo filename)
+
+)
