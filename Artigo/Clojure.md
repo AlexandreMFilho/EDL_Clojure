@@ -23,7 +23,7 @@ Hickey trabalhou na dotLisp, um projeto com base na plataforma .NET e também de
 Ele a desenvolveu pelo desejo de modernizar a linguagem LISP mesclando-a com a plataforma Java para Programação Funcional e desenhada para computação concorrente.
 Atualmente no Brasil Clojure é utilizado por empresas como Walmart, Puppet Labs, B2W, americanas, submarino, Nubank, dentre outras, demonstrando sua força, poder e adaptabilidade.  
 
-O nome Clojure, de acordo com o próprio criador da linguagem, é um trocadilho com o conceito em programação “closure”, incorporando as letras C, L e J que se referem a C#, Lisp e Java respectivamente que foram as três linguagens que mais influenciaram no design de Clojure. 
+O nome Clojure, de acordo com o próprio criador da linguagem, é um trocadilho com o conceito em programação “closure”, incorporando as letras C, L e J que se referem a C#, Lisp e Java respectivamente que foram as três linguagens que mais influenciaram no design de Clojure.
 
 ## Características
 
@@ -36,7 +36,7 @@ Essa pensamento é tão forte que um clojurista adotou a a seguinte filosofia:
 >Alan Perlis
 
 ### Estática ou Dinâmica?
-Clojure é uma linguagem com tipagem dinâmica e compilada que mantém sua dinamicidade através de um ambiente que permite com que cada um de seus recursos da linguagem sejam suportados em tempo de execução. 
+Clojure é uma linguagem com tipagem dinâmica e compilada que mantém sua dinamicidade através de um ambiente que permite com que cada um de seus recursos da linguagem sejam suportados em tempo de execução.
 
 O ambiente repl é utilizado para fazer a execução de seus programas e leiningen é uma ferramenta popular escrita usando própria linguagem Clojure que faz o gerênciamento de dependencias e a automação da compilação, simplificando os processos necessários para a criação de um projeto.
 
@@ -51,7 +51,34 @@ Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços s�
 
 #### B2W
 
+##
+
+##### Hello World
+
+>(ns hello_world.core  
+  (:gen-class))  
+>
+>(defn -main  
+  [& args]  
+  (println "Hello World!!!"))
+
+##### Criando funções
+
+Utilizamos defn para criar uma função pública no nosso namespace. Há também variações como defn- que cria funç privadas no namespace, ou, def que cria constantes publicas no namespace e fn que cria funções anônimas.
+
+>(ns math.core  
+(:gen-class))  
+>
+>(defn soma [x y]  
+(+ x y))  
+>  
+(defn-main  [& args]  
+(println (soma 2 3)))
+
+
 ## Exemplos
+
+
 
 ## Bibliografia
 https://blog.nubank.com.br/o-que-e-clojure/  
