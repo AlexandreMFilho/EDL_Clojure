@@ -78,7 +78,7 @@ C
 
 Java
 >```Java
->public class hello_world(){
+>public class hello_world{
 >  public static void main(String[] args){
 >    System.out.println("Hello World!!!");
 >  }
@@ -149,38 +149,19 @@ C
 >```
 
 Java
+```Java
+public class fatorial{
 
-##### Fibonacci recursivo
-Em clojure, é permitida a criação de funções de multi-aridades, ou seja funções com números variados de argumentos, no caso apresentado abaixo, a segunda função que gera a sequencia a partir da anterior, recebe tanto uma coleção e um número quanto só o número.
+  public calc(int x){
 
->```Clojure
->(ns fib.core
->  (:gen-class))
->
->(defn fibonacci [n]
->  "recebe uma coleção com os primeiros números da sequência e calcula o próximo."
->  (conj n (+ (last n) (nth n (- (count n) 2)))))
->  ;conj col x => retorna uma nova coleção com um item x adicionado.
->  ;last col => retorna o último item da coleção.
->  ;nth col ind => retorna o valor no indice.
->  ;count col => retorna o numero total de itens na coleção.
->
->(defn fib ([num]
->  "Função de multi-aridade que recebe o número de itens a serem gerados e recursivamente chama a si mesma com uma >coleção inicial até formar a sequencia." 
->  (fib [0 1] num))
->  ([fib-col num]
->  (if (<= (count fib-col) num)
->    (fib (fibonacci fib-col) num) fib-col)))
->
->(defn -main
->  [& args]
->  (println(fib 15))) ;Imprime uma sequencia de fibonacci em forma de coleção de 15 números a partir do 0.
->  
->```
+  }
+  public static void main(String[] args){
+    System.out.println("Informe o numero que deseja obter o fatorial:\n");
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-> Output: [0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610]
-
-
+    fatorial.calc(num);
+}
+```
 ## Bibliografia
 https://blog.nubank.com.br/o-que-e-clojure/  
 https://clojure.org/  
