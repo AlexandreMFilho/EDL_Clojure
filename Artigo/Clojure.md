@@ -150,6 +150,35 @@ C
 
 Java
 
+##### Fibonacci recursivo
+Em clojure, é permitida a criação de funções de multi-aridades, ou seja funções com números variados de argumentos, no caso apresentado abaixo, a segunda função que gera a sequencia a partir da anterior, recebe tanto uma coleção e um número quanto só o número.
+
+>```Clojure
+>(ns fib.core
+>  (:gen-class))
+>
+>(defn fibonacci [n]
+>  "recebe uma coleção com os primeiros números da sequência e calcula o próximo."
+>  (conj n (+ (last n) (nth n (- (count n) 2)))))
+>  ;conj col x => retorna uma nova coleção com um item x adicionado.
+>  ;last col => retorna o último item da coleção.
+>  ;nth col ind => retorna o valor no indice.
+>  ;count col => retorna o numero total de itens na coleção.
+>
+>(defn fib ([num]
+>  "Função de multi-aridade que recebe o número de itens a serem gerados e recursivamente chama a si mesma com uma >coleção inicial até formar a sequencia." 
+>  (fib [0 1] num))
+>  ([fib-col num]
+>  (if (<= (count fib-col) num)
+>    (fib (fibonacci fib-col) num) fib-col)))
+>
+>(defn -main
+>  [& args]
+>  (println(fib 15)))
+>  
+>```
+
+
 ## Bibliografia
 https://blog.nubank.com.br/o-que-e-clojure/  
 https://clojure.org/  
