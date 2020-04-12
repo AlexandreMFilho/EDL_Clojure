@@ -174,9 +174,11 @@ Em clojure, é permitida a criação de funções de multi-aridades, ou seja fun
 >
 >(defn -main
 >  [& args]
->  (println(fib 15)))
+>  (println(fib 15))) ;Imprime uma sequencia de fibonacci em forma de coleção de 15 números a partir do 0.
 >  
 >```
+
+> Output: [0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610]
 
 
 ## Bibliografia
