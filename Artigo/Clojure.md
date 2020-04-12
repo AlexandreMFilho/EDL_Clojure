@@ -53,28 +53,29 @@ Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços s�
 
 ##
 
-##### Hello World
+##### Hello World  
 
->(ns hello_world.core  
+```
+(ns hello_world.core  
   (:gen-class))  
->
->(defn -main  
-  [& args]  
-  (println "Hello World!!!"))
 
+(defn -main  
+  [& args]  
+  (println "Hello World!!!"))  
+```
 ##### Criando funções
 
 Utilizamos defn para criar uma função pública no nosso namespace. Há também variações como defn- que cria funç privadas no namespace, ou, def que cria constantes publicas no namespace e fn que cria funções anônimas.
+```
+(ns math.core  
+  (:gen-class))  
 
->(ns math.core  
-(:gen-class))  
->
->(defn soma [x y]  
-(+ x y))  
->  
+(defn soma [x y]  
+  (+ x y))  
+
 (defn-main  [& args]  
-(println (soma 2 3)))
-
+  (println (soma 2 3)))
+```
 
 ## Exemplos
 
