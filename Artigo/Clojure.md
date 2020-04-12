@@ -99,7 +99,7 @@ Utilizamos defn para criar uma função pública no nosso namespace. Há também
 
 #### Fatorial Recursivo
 
-É demonstrado duas maneiras de se fazer o fatorial recursivo, a primeira utilizando-se apenas da chamada recursiva e a segunda utilizando-se de otimização na chamada de cauda usando loop/recur. 
+É demonstrado duas maneiras de se fazer o fatorial recursivo, a primeira utilizando-se apenas da chamada recursiva e a segunda utilizando-se de otimização na chamada de cauda usando loop/recur.
 
 
 ```clojure
@@ -107,7 +107,7 @@ Utilizamos defn para criar uma função pública no nosso namespace. Há também
   (:gen-class))
 
 (defn fatorial[n]
-  (if (= 1 n) 
+  (if (= 1 n)
     1
     (* n (fatorial(dec n))))) ; dec => n -= 1 => n = n-1
 
@@ -124,6 +124,27 @@ Utilizamos defn para criar uma função pública no nosso namespace. Há também
   (println (fatorialRecur 5)))
 ```
 
+```c
+#include <stdio.h>
+
+int fatorial(int);
+
+int main(){
+  int n;                        
+  printf("Informe o número que deseja obter o fatorial:\n");
+  scanf("%d",&n);
+  printf("O fatorial de %d é %d \n",n,fatorial(n));
+  return 0;
+}
+
+int fatorial(int x){
+  if(x == 0 || x == 1){
+    return 1;
+  }else{
+    return fatorial(x-1) * x;
+  }
+}
+```
 ## Bibliografia
 https://blog.nubank.com.br/o-que-e-clojure/  
 https://clojure.org/  
