@@ -50,25 +50,23 @@ O CLOJURE é utilizado por empresas como a Nubank, para eles CLOJURE é uma ferr
 Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços são escritos em CLOJURE. Ainda posssuem códigos escritos em outras linguagens como python e Scala, mas a infraestrutura de microsserviços estão todos em CLOJURE.
 
 #### B2W
-
-##
+[...]  
 
 ## Exemplos
-
 
 ##### Hello World  
 
 Clojure
-```clojure
-(ns hello_world.core  
-  (:gen-class))  
+>```clojure
+>(ns hello_world.core  
+>  (:gen-class))  
+>
+>(defn -main  
+>  [& args]  
+>  (println "Hello World!!!"))  
+>```  
 
-(defn -main  
-  [& args]  
-  (println "Hello World!!!"))  
-```
-
-C
+C  
 >```C
 >#include <stdio.h>
 >
@@ -79,76 +77,79 @@ C
 >```
 
 Java
-```Java
-public class hello_world(){
-  public static void main(String[] args){
-    System.out.println("Hello World!!!");
-  }
-}
-```
+>```Java
+>public class hello_world(){
+>  public static void main(String[] args){
+>    System.out.println("Hello World!!!");
+>  }
+>}
+>```
 ##### Criando funções
 
 Utilizamos defn para criar uma função pública no nosso namespace. Há também variações como defn- que cria funç privadas no namespace, ou, def que cria constantes publicas no namespace e fn que cria funções anônimas.
 
-```clojure
-(ns math.core  
-  (:gen-class))  
-
-(defn soma [x y]  
-  (+ x y))  
-
-(defn-main  [& args]  
-  (println (soma 2 3)))
-```
+>```clojure
+>(ns math.core  
+>  (:gen-class))  
+>
+>(defn soma [x y]  
+>  (+ x y))  
+>
+>(defn-main  [& args]  
+>  (println (soma 2 3)))
+>```
 ##### Fatorial Recursivo
 
 É demonstrado duas maneiras de se fazer o fatorial recursivo, a primeira utilizando-se apenas da chamada recursiva e a segunda utilizando-se de otimização na chamada de cauda usando loop/recur.
 
 Clojure
-```clojure
-(ns factorial.core
-  (:gen-class))
+>```clojure
+>(ns factorial.core
+>  (:gen-class))
+>
+>(defn fatorial[n]
+>  (if (= 1 n)
+>    1
+>    (* n (fatorial(dec n))))) ; dec => n -= 1 => n = n-1
+>
+>(defn fatorialRecur [n]
+>  (loop [atual n prox (dec atual) total 1]
+>    (if (> atual 1)
+>      (recur prox (dec prox) (* total atual))
+>      total)))
+>
+>(defn -main
+>  [& args]
+>  (println (fatorial 5))
+>  (println (fatorialRecur 5)))
+>
+>```
 
-(defn fatorial[n]
-  (if (= 1 n)
-    1
-    (* n (fatorial(dec n))))) ; dec => n -= 1 => n = n-1
-
-(defn fatorialRecur [n]
-  (loop [atual n prox (dec atual) total 1]
-    (if (> atual 1)
-      (recur prox (dec prox) (* total atual))
-      total)))
-
-(defn -main
-  [& args]
-  (println (fatorial 5))
-  (println (fatorialRecur 5)))
-
-```
 C
+>```c
+>#include <stdio.h>
+>
+>int fatorial(int);
+>
+>int main(){
+>  int n;                        
+>  printf("Informe o número que deseja obter o fatorial:\n");
+>  scanf("%d",&n);
+>  printf("O fatorial de %d é %d \n",n,fatorial(n));
+>  return 0;
+>}
+>
+>int fatorial(int x){
+>  if(x == 0 || x == 1){
+>    return 1;
+>  }else{
+>    return fatorial(x-1) * x;
+>  }
+>}
+>```
 
-```c
-#include <stdio.h>
+Java
 
-int fatorial(int);
-
-int main(){
-  int n;                        
-  printf("Informe o número que deseja obter o fatorial:\n");
-  scanf("%d",&n);
-  printf("O fatorial de %d é %d \n",n,fatorial(n));
-  return 0;
-}
-
-int fatorial(int x){
-  if(x == 0 || x == 1){
-    return 1;
-  }else{
-    return fatorial(x-1) * x;
-  }
-}
-```
 ## Bibliografia
 https://blog.nubank.com.br/o-que-e-clojure/  
 https://clojure.org/  
