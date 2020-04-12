@@ -53,51 +53,52 @@ Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços s�
 
 ##
 
+## Exemplos
+
+
 ##### Hello World  
 
 ```clojure
 (ns hello_world.core  
   (:gen-class))  
 
-(defn -main  
-  [& args]  
-  (println "Hello World!!!"))  
+  (defn -main  
+    [& args]  
+    (println "Hello World!!!"))  
 ```
 
 
 ```C
-#include <stdio.h>
+    #include <stdio.h>
 
-int main(){
-  printf("Hello World!!!");
-  return 0;
-}
+    int main(){
+      printf("Hello World!!!");
+      return 0;
+    }
 ```
 
 ```Java
-public class hello_world(){
-  public static void main(String[] args){
-    System.out.println("Hello World!!!");
-  }
-}
+    public class hello_world(){
+      public static void main(String[] args){
+        System.out.println("Hello World!!!");
+      }
+    }
 ```
 ##### Criando funções
 
 Utilizamos defn para criar uma função pública no nosso namespace. Há também variações como defn- que cria funç privadas no namespace, ou, def que cria constantes publicas no namespace e fn que cria funções anônimas.
+
 ```clojure
-(ns math.core  
-  (:gen-class))  
+    (ns math.core  
+      (:gen-class))  
 
-(defn soma [x y]  
-  (+ x y))  
+      (defn soma [x y]  
+        (+ x y))  
 
-(defn-main  [& args]  
-  (println (soma 2 3)))
+        (defn-main  [& args]  
+          (println (soma 2 3)))
 ```
-
-## Exemplos
-
-#### Fatorial Recursivo
+##### Fatorial Recursivo
 
 É demonstrado duas maneiras de se fazer o fatorial recursivo, a primeira utilizando-se apenas da chamada recursiva e a segunda utilizando-se de otimização na chamada de cauda usando loop/recur.
 
