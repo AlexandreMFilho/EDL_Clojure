@@ -49,9 +49,6 @@ O CLOJURE é utilizado por empresas como a Nubank, para eles CLOJURE é uma ferr
 
 Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços são escritos em CLOJURE. Ainda posssuem códigos escritos em outras linguagens como python e Scala, mas a infraestrutura de microsserviços estão todos em CLOJURE.
 
-#### B2W
-[...]  
-
 ## Exemplos
 
 ##### Hello World  
@@ -147,8 +144,6 @@ C
 >  }
 >}
 >```
-
-Java
 
 ##### Fibonacci recursivo
 Em clojure, é permitida a criação de funções de multi-aridades, ou seja funções com números variados de argumentos, no caso apresentado abaixo, a segunda função que gera a sequencia a partir da anterior, recebe tanto uma coleção e um número quanto só o número.
