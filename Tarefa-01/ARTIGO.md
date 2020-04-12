@@ -180,7 +180,24 @@ Em clojure, é permitida a criação de funções de multi-aridades, ou seja fun
 
 > Output: [0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610]
 
-
+C
+>```C
+>#include <stdio.h>
+>int fib(int n){                                         
+>  if (n == 1) return 1;                   
+>  else{                                    
+>    if (n == 2) return 1;                 
+>    else
+>      return fib(n - 1) + fib(n - 2);  
+>  }
+>}                                          
+>int main(void){
+>  int n;
+>  scanf("%d", &n);
+>  printf("%d\n", fib(n));
+>  return 0;
+>}
+>```
 ## Bibliografia
 https://blog.nubank.com.br/o-que-e-clojure/  
 https://clojure.org/  
