@@ -79,7 +79,32 @@ Utilizamos defn para criar uma função pública no nosso namespace. Há também
 
 ## Exemplos
 
+#### Fatorial Recursivo
 
+É demonstrado duas maneiras de se fazer o fatorial recursivo, a primeira utilizando-se apenas da chamada recursiva e a segunda utilizando-se de otimização na chamada de cauda usando loop/recur. 
+
+```
+(ns factorial.core
+  (:gen-class))
+
+(defn fatorial[n]
+  (if (= 1 n) 
+    1
+    (* n (fatorial(dec n))))) ; dec => n -= 1 => n = n-1
+
+(defn fatorialRecur [n]
+  (loop [atual n prox (dec atual) total 1]
+    (if (> atual 1)
+      (recur prox (dec prox) (* total atual))
+      total)))
+
+
+(defn -main
+  [& args]
+  (println (fatorial 5))
+  (println (fatorialRecur 5)))
+  
+```
 
 ## Bibliografia
 https://blog.nubank.com.br/o-que-e-clojure/  
