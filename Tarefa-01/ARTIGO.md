@@ -43,20 +43,149 @@ O ambiente repl é utilizado para fazer a execução de seus programas e leining
 ### Onde e como é usado ?
 
 #### Nubank
-O CLOJURE é utilizado por empresas como a Nubank, para eles "CLOJURE é uma ferramenta que permitiu remover a burocracia do sistema financeiro e devolver às pessoas o controle sobre o próprio dinheiro". Quando a empresa foi fundada CLOJURE pareceu a melhor opção afirmam seus funcionários, por ser Funcional:  
+O CLOJURE é utilizado por empresas como a Nubank, para eles CLOJURE é uma ferramenta que permitiu remover a burocracia do sistema financeiro e devolver às pessoas o controle sobre o próprio dinheiro. Quando a empresa foi fundada CLOJURE pareceu a melhor opção afirmam seus funcionários, por ser Funcional:  
 >“Uma linguagem funcional, quando utilizada de forma correta, possui comportamento equivalente a uma função matemática, por isso não retorna um resultado inesperado”.  
 >diz Bruno.
 
 Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços são escritos em CLOJURE. Ainda posssuem códigos escritos em outras linguagens como python e Scala, mas a infraestrutura de microsserviços estão todos em CLOJURE.
 
 #### B2W
+[...]  
 
 ## Exemplos
+
+##### Hello World  
+
+Clojure
+>```clojure
+>(ns hello_world.core  
+>  (:gen-class))  
+>
+>(defn -main  
+>  [& args]  
+>  (println "Hello World!!!"))  
+>```  
+
+C  
+>```C
+>#include <stdio.h>
+>
+>int main(){
+>  printf("Hello World!!!");
+>  return 0;
+>}
+>```
+
+Java
+>```Java
+>public class hello_world{
+>  public static void main(String[] args){
+>    System.out.println("Hello World!!!");
+>  }
+>}
+>```
+##### Criando funções
+
+Utilizamos defn para criar uma função pública no nosso namespace. Há também variações como defn- que cria funç privadas no namespace, ou, def que cria constantes publicas no namespace e fn que cria funções anônimas.
+
+>```clojure
+>(ns math.core  
+>  (:gen-class))  
+>
+>(defn soma [x y]  
+>  (+ x y))  
+>
+>(defn-main  [& args]  
+>  (println (soma 2 3)))
+>```
+##### Fatorial Recursivo
+
+É demonstrado duas maneiras de se fazer o fatorial recursivo, a primeira utilizando-se apenas da chamada recursiva e a segunda utilizando-se de otimização na chamada de cauda usando loop/recur.
+
+Clojure
+>```clojure
+>(ns factorial.core
+>  (:gen-class))
+>
+>(defn fatorial[n]
+>  (if (= 1 n)
+>    1
+>    (* n (fatorial(dec n))))) ; dec => n -= 1 => n = n-1
+>
+>(defn fatorialRecur [n]
+>  (loop [atual n prox (dec atual) total 1]
+>    (if (> atual 1)
+>      (recur prox (dec prox) (* total atual))
+>      total)))
+>
+>(defn -main
+>  [& args]
+>  (println (fatorial 5))
+>  (println (fatorialRecur 5)))
+>
+>```
+
+C
+>```c
+>#include <stdio.h>
+>
+>int fatorial(int);
+>
+>int main(){
+>  int n;                        
+>  printf("Informe o número que deseja obter o fatorial:\n");
+>  scanf("%d",&n);
+>  printf("O fatorial de %d é %d \n",n,fatorial(n));
+>  return 0;
+>}
+>
+>int fatorial(int x){
+>  if(x == 0 || x == 1){
+>    return 1;
+>  }else{
+>    return fatorial(x-1) * x;
+>  }
+>}
+>```
+
+Java
+
+##### Fibonacci recursivo
+Em clojure, é permitida a criação de funções de multi-aridades, ou seja funções com números variados de argumentos, no caso apresentado abaixo, a segunda função que gera a sequencia a partir da anterior, recebe tanto uma coleção e um número quanto só o número.
+
+>```Clojure
+>(ns fib.core
+>  (:gen-class))
+>
+>(defn fibonacci [n]
+>  "recebe uma coleção com os primeiros números da sequência e calcula o próximo."
+>  (conj n (+ (last n) (nth n (- (count n) 2)))))
+>  ;conj col x => retorna uma nova coleção com um item x adicionado.
+>  ;last col => retorna o último item da coleção.
+>  ;nth col ind => retorna o valor no indice.
+>  ;count col => retorna o numero total de itens na coleção.
+>
+>(defn fib ([num]
+>  "Função de multi-aridade que recebe o número de itens a serem gerados e recursivamente chama a si mesma com uma >coleção inicial até formar a sequencia."
+>  (fib [0 1] num))
+>  ([fib-col num]
+>  (if (<= (count fib-col) num)
+>    (fib (fibonacci fib-col) num) fib-col)))
+>
+>(defn -main
+>  [& args]
+>  (println(fib 15))) ;Imprime uma sequencia de fibonacci em forma de coleção de 15 números a partir do 0.
+>  
+>```
+
+> Output: [0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610]
+
 
 ## Bibliografia
 https://blog.nubank.com.br/o-que-e-clojure/  
 https://clojure.org/  
 https://pt.wikipedia.org/wiki/Clojure  
+https://en.wikipedia.org/wiki/Clojure  
 https://www.devmedia.com.br/introducao-a-linguagem-clojure/30587  
 https://www.braveclojure.com/  
 https://angeliski.com.br/tag/funcional/  
