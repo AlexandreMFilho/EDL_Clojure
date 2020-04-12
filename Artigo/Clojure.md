@@ -83,8 +83,8 @@ Utilizamos defn para criar uma função pública no nosso namespace. Há também
 
 É demonstrado duas maneiras de se fazer o fatorial recursivo, a primeira utilizando-se apenas da chamada recursiva e a segunda utilizando-se de otimização na chamada de cauda usando loop/recur. 
 
-```
-(ns factorial.core
+
+```(ns factorial.core
   (:gen-class))
 
 (defn fatorial[n]
@@ -103,7 +103,6 @@ Utilizamos defn para criar uma função pública no nosso namespace. Há também
   [& args]
   (println (fatorial 5))
   (println (fatorialRecur 5)))
-  
 ```
 
 ## Bibliografia
