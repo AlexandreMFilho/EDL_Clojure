@@ -58,12 +58,8 @@ Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços s�
 
 ##### Hello World  
 
-<<<<<<< HEAD
-```clojure  
-=======
 Clojure
 ```clojure
->>>>>>> 845d4b3536372f674099a5ec955b50870fcdca3e
 (ns hello_world.core  
   (:gen-class))  
 
@@ -73,14 +69,14 @@ Clojure
 ```
 
 C
-```C
-#include <stdio.h>
-
-int main(){
-  printf("Hello World!!!");
-  return 0;
-}
-```
+>```C
+>#include <stdio.h>
+>
+>int main(){
+>  printf("Hello World!!!");
+>  return 0;
+>}
+>```
 
 Java
 ```Java
