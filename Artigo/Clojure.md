@@ -128,7 +128,7 @@ Utilizamos defn para criar uma função pública no nosso namespace. Há também
 https://blog.nubank.com.br/o-que-e-clojure/  
 https://clojure.org/  
 https://pt.wikipedia.org/wiki/Clojure  
-https://en.wikipedia.org/wiki/Clojure
+https://en.wikipedia.org/wiki/Clojure  
 https://www.devmedia.com.br/introducao-a-linguagem-clojure/30587  
 https://www.braveclojure.com/  
 https://angeliski.com.br/tag/funcional/  
