@@ -55,7 +55,7 @@ Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços s�
 
 ##### Hello World  
 
-```
+```clojure
 (ns hello_world.core  
   (:gen-class))  
 
@@ -66,7 +66,7 @@ Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços s�
 ##### Criando funções
 
 Utilizamos defn para criar uma função pública no nosso namespace. Há também variações como defn- que cria funç privadas no namespace, ou, def que cria constantes publicas no namespace e fn que cria funções anônimas.
-```
+```clojure
 (ns math.core  
   (:gen-class))  
 
