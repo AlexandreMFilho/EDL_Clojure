@@ -58,6 +58,7 @@ Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços s�
 
 ##### Hello World  
 
+Clojure
 ```clojure
 (ns hello_world.core  
   (:gen-class))  
@@ -67,7 +68,7 @@ Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços s�
     (println "Hello World!!!"))  
 ```
 
-
+C
 ```C
     #include <stdio.h>
 
@@ -77,6 +78,7 @@ Hoje todas as áreas do Nubank usam CLOJURE e mais de 90% dos microsserviços s�
     }
 ```
 
+Java
 ```Java
     public class hello_world(){
       public static void main(String[] args){
@@ -102,7 +104,7 @@ Utilizamos defn para criar uma função pública no nosso namespace. Há também
 
 É demonstrado duas maneiras de se fazer o fatorial recursivo, a primeira utilizando-se apenas da chamada recursiva e a segunda utilizando-se de otimização na chamada de cauda usando loop/recur.
 
-
+Clojure
 ```clojure
 (ns factorial.core
   (:gen-class))
@@ -123,7 +125,9 @@ Utilizamos defn para criar uma função pública no nosso namespace. Há também
   [& args]
   (println (fatorial 5))
   (println (fatorialRecur 5)))
+
 ```
+C
 
 ```c
 #include <stdio.h>
